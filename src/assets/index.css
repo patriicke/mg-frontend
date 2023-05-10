@@ -1,0 +1,162 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Graphit";
+  src: url("../assets/fonts/Graphit/Graphit-Regular.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphit";
+  src: url("../assets/fonts/Graphit/Graphit-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphit";
+  src: url("../assets/fonts/Graphit/Graphit-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Play";
+  src: url("../assets/fonts/play/Play-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Play";
+  src: url("../assets/fonts/play/Play-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphit";
+  src: url("../assets/fonts/Graphit/Graphit-Light.otf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Karantina";
+  src: url("../assets/fonts/karantina/Karantina-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../assets/fonts/futura/futura medium bt.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../assets/fonts/futura/Futura-Round.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'GeogrotesqueWide';
+  src: url("../assets/fonts/GeogrotesqueWide/GeogrotesqueWide-Lt.woff") format('woff');
+  font-weight: 200;
+}
+
+
+@font-face {
+  font-family: 'GeogrotesqueWide';
+  src: url("../assets/fonts/GeogrotesqueWide/GeogrotesqueWide-Md.woff") format('woff');
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: 'GeogrotesqueWide';
+  src: url("../assets/fonts/GeogrotesqueWide/GeogrotesqueWide-SmBd.woff") format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'GeogrotesqueWide';
+  src: url("../assets/fonts/GeogrotesqueWide/GeogrotesqueWide-Bd.woff") format('woff');
+  font-weight: 800;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #8C858532;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8C8585;
+  border-radius: 100vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7D9806;
+}
+
+
+.back-slider {
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 50%, transparent 100%);
+}
+
+.mask-slider {
+  -webkit-mask-image: linear-gradient(90deg, transparent 46%, black 10%, black 54%, transparent 50%);
+}
+
+@media only screen and (max-width: 1500px) {
+  .mask-slider {
+    -webkit-mask-image: linear-gradient(90deg, transparent 45%, black 10%, black 55%, transparent 50%);
+  }
+}
+
+@media only screen and (max-width: 1285px) {
+  .mask-slider {
+    -webkit-mask-image: linear-gradient(90deg, transparent 43%, black 10%, black 57%, transparent 50%);
+  }
+}
+
+
+.root,
+#root,
+#docs-root {
+  --primary-color: #fff;
+  --yellow-text-color: #F0BE43;
+  --green-text-color: #DEFC5C;
+  --brown: #BF6D2D;
+  --primary-bg-color: #0F1012;
+  --second-bg-color: #434343;
+  --primary-button-bg-color: #B0D512;
+  --second-button-bg-color: #15171B;
+  --text-balance-color: #EAB53B;
+  --orange-color: #F0BE43;
+  --max-width: 1228px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+   -moz-appearance: textfield;
+}
+
+body {
+  background-color: #0f1012;
+}

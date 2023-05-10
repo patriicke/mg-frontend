@@ -1,0 +1,282 @@
+.shadow-selected {
+  filter: drop-shadow(5.20105px 7px 45px #b0d412);
+  will-change: transform;
+}
+
+.mob-red-bg {
+  background: radial-gradient(
+      70.06% 242.05% at 20.39% 55.54%,
+      #ed4e35 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    #0f1012;
+}
+
+.mob-yellow-bg {
+  background: radial-gradient(
+      61.53% 124.48% at 13.06% 38.81%,
+      #ffd54d 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    #0f1012;
+}
+
+.mob-blue-bg {
+  background: radial-gradient(
+      47.2% 95.49% at 13.84% 29.22%,
+      #5777ff 0%,
+      rgba(94, 125, 255, 0.28) 100%
+    ),
+    #0f1012;
+}
+
+@media screen and (max-width: 991px) {
+  .bonus-select .wrapper svg {
+    max-width: 150px;
+    height: 64px;
+  }
+  .bonus-select button svg {
+    max-width: 15px;
+  }
+  .bonus-select .bonus-money-svg svg {
+    max-width: 30px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 639px) {
+  .bonus-select .bonus-content {
+    padding-top: 8px;
+  }
+  .bonus-select .bonus-max {
+    padding-top: 8px;
+    padding-left: 25px;
+  }
+  .bonus-select .bonus-text {
+    top: 17px;
+  }
+  .bonus-select .bonus-max-text {
+    top: 17px;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .bonus-select .bonus-content {
+    padding-top: 0px;
+  }
+  .bonus-select .bonus-text {
+    top: 7px;
+  }
+  .bonus-select .bonus-max {
+    padding-top: 0;
+    padding-left: 18px;
+  }
+  .bonus-select .bonus-max-text {
+    top: 8px;
+    right: 5px;
+  }
+  .bonus-select .wrapper svg {
+    max-width: 105px;
+    height: 44px;
+  }
+  .bonus-select button svg {
+    max-width: 12px;
+    height: auto;
+  }
+  .bonus-money-svg {
+    margin-top: -5px;
+  }
+}
+
+@media screen and (max-width: 421px) {
+  /* .bonus-select{
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items: center;
+        gap:10px;
+    } */
+
+  .bonus-select .bonus-max {
+    padding-left: 10px;
+  }
+  .bonus-select .wrapper svg {
+    max-width: 105px;
+    height: 44px;
+  }
+  .bonus-select .bonus-max-wrapper svg {
+    max-width: 91px;
+  }
+  .bonus-select button svg {
+    max-width: 12px;
+    height: auto;
+  }
+  .bonus-money-svg {
+    margin-top: -5px;
+  }
+}
+
+.bg-fixed {
+  position: fixed;
+  overflow: hidden;
+}
+
+.bonus-item {
+  width: 23%;
+  transition: 0.15s ease-in-out all;
+  text-align: center;
+}
+.bonus-item:hover,
+.bonus-item.active {
+  width: 25%;
+}
+.bonus-item button {
+  /* position:absolute; */
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.15s ease-in-out all;
+  margin-top: 15px;
+  /* background-color: ; */
+}
+.bonus-item:hover button {
+  opacity: 0.4;
+  visibility: visible;
+  pointer-events: none;
+}
+.bonus-item.active button {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.mobile-bonus-content {
+  display: flex;
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+
+.mobile-bonus-content .mobile-bonus-item {
+  transition: 0.15s ease-in-out all;
+  height: 100%;
+  position: relative;
+  pointer-events: none;
+}
+
+.mobile-bonus-content .mobile-bonus-item:hover,
+.mobile-bonus-content .mobile-bonus-item.active {
+  min-width: 72px;
+}
+
+.mobile-bonus-content .chevronRight {
+  position: absolute;
+  z-index: 2;
+}
+.mobile-bonus-content .chevronRight img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .bonus-row {
+    flex-wrap: wrap;
+    gap: 20px 0;
+  }
+  .bonus-item {
+    width: 40%;
+  }
+  .bonus-item:hover,
+  .bonus-item.active {
+    width: 48%;
+  }
+  .bonus-item button {
+    width: 120px;
+    font-size: 14px;
+    padding: 10px;
+  }
+  .mobile-bonus-content {
+    gap: 30px;
+  }
+  .mobile-bonus-content .mobile-bonus-item.active {
+    width: 75%;
+  }
+  .mobile-bonus-content .chevronRight {
+    position: absolute;
+    top: 35%;
+    right: -18%;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+  }
+  .mobile-bonus-content .mobile-bonus-item.active .chevronRight {
+    right: -15%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mobile-bonus-content {
+    gap: 15px;
+  }
+  .mobile-bonus-content .mobile-bonus-item.active {
+    width: 100%;
+  }
+  .mobile-bonus-content .chevronRight {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .mobile-bonus-content {
+    gap: 7px;
+  }
+  .mobile-bonus-content .mobile-bonus-item {
+    width: 64px;
+  }
+  .mobile-bonus-content .mobile-bonus-item:hover,
+  .mobile-bonus-content .mobile-bonus-item.active {
+    min-width: 72px;
+  }
+
+  .mobile-bonus-content .chevronRight {
+    right: -15%;
+    width: 16px;
+    height: 16px;
+  }
+  .mobile-bonus-content .mobile-bonus-item:hover .chevronRight,
+  .mobile-bonus-content .mobile-bonus-item.active .chevronRight {
+    right: -15%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* disable zooming */
+  body {
+    touch-action: manipulation;
+  }
+
+  /* prevent double tap zooming on iOS */
+  /* you may need to adjust this value depending on your website's design */
+  div {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:575px){
+  .mobile-bonus-content{
+      gap:7px;
+  }
+  .mobile-bonus-content .mobile-bonus-item{
+      margin-top: 20px;
+      width: 100%;
+  }
+  .mobile-bonus-content .mobile-bonus-item:hover , .mobile-bonus-content .mobile-bonus-item.active {
+      margin-top: 0;
+  }
+  
+  .mobile-bonus-content .chevronRight{
+      right: -15%;
+      width: 16px ;
+      height: 16px;
+  }
+  .mobile-bonus-content .mobile-bonus-item:hover .chevronRight,.mobile-bonus-content .mobile-bonus-item.active .chevronRight{
+      right: -15%;
+  }
+}
